@@ -1,0 +1,20 @@
+@media(max-width:767px) {
+    .continer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .Startsone label::before,
+    .Startsone label:hover::after,
+    .Startsone label:hover~::after,
+    .Startsone input:checked~label::after {
+        font-size: 60px;
+    }
+    .Startsone label {
+        width: 55px;
+    }
+    .Starts {
+        width: 300px;
+        height: 200px;
+        margin: 200px auto;
+    }
+}

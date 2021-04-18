@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #222;
+}
+
+.continer {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.Starts {
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.Starts h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: gold;
+    font-weight: 900;
+    letter-spacing: 25px;
+}
+
+.Startsone input {
+    display: none;
+}
+
+.Startsone label {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 130px;
+    cursor: pointer;
+}
+
+.Startsone label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: '\2605';
+    font-size: 120px;
+    color: #fff;
+}
+
+.Startsone label:hover::after,
+.Startsone label:hover~::after,
+.Startsone input:checked~label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: '\2605';
+    font-size: 120px;
+    color: yellow;
+}
